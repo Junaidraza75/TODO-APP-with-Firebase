@@ -1,0 +1,244 @@
+#main {
+    background-color: #b8d2d9;
+}
+
+.content {
+    background: #fff;
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    border-radius: 10px 110px 10px 110px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.inp {
+    border-radius: 5px;
+    background-color: #cbeef8;
+    color: black;
+    border-color: #cbeef8;
+    width: 60%;
+}
+
+.inp>li {
+    color: white;
+}
+
+.ipn:active {
+    border-radius: 5px;
+    border-color: #cbeef8;
+}
+
+#list {
+    color: rgb(33, 82, 82);
+    list-style-type: none;
+    padding: 10px
+}
+
+ul>li {
+
+    text-align: center;
+    border-radius: 10px;
+}
+
+.lis {
+    background: #b8d2d9;
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    border-radius: 10px 90px 10px 90px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.d-flex {
+    margin-left: 37.2%;
+    margin-top: 5px;
+}
+
+.btn1 {
+    background-color: rgb(41, 134, 177);
+    margin-left: 10px;
+    border-radius: 7px;
+    color: white;
+    border-color: #b8d2d9;
+    font-size: 17px;
+}
+
+.btnedit {
+    background-color: #2471a3;
+    margin-top: 5px;
+    margin-left: 20px;
+    color: white;
+    border-radius: 7px;
+    border-color: #2471a3;
+}
+
+.btnedit:hover {
+    background-color: skyblue;
+    border: skyblue;
+    border-radius: 3px;
+}
+
+.btndel {
+    background-color: #2471a3;
+    margin-top: 5px;
+    margin-left: 10px;
+    color: white;
+    border-radius: 7px;
+    border-color: #2471a3;
+}
+
+.btndel:hover {
+    background-color: skyblue;
+    border: skyblue;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 982px) {
+    .content {
+        background: #fff;
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 20px 30px;
+        border-radius: 10px 110px 10px 110px;
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+    }
+    .btn:hover {
+        background-color: skyblue;
+        border: skyblue;
+        border-radius: 3px;
+    }
+    .inp {
+        border-radius: 5px;
+        background-color: #cbeef8;
+        color: black;
+        border-color: #cbeef8;
+        width: 80%;
+    }
+    .ipn:active {
+        border-radius: 5px;
+        border-color: #cbeef8;
+    }
+    .d-flex {
+        margin-left: 30.2%;
+        margin-top: 5px;
+    }
+    .btn1 {
+        background-color: rgb(41, 134, 177);
+        margin-left: 10px;
+        border-radius: 5px;
+        color: white;
+        border-color: #b8d2d9;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .content {
+        background: #fff;
+        max-width: 440px;
+        margin: 30px auto;
+        padding: 20px 30px;
+        border-radius: 10px 110px 10px 110px;
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+    }
+    .btn:hover {
+        background-color: skyblue;
+        border: skyblue;
+        border-radius: 3px;
+    }
+    .d-flex {
+        margin-left: 22.2%;
+        margin-top: 5px;
+    }
+    .btn1 {
+        background-color: rgb(41, 134, 177);
+        margin-left: 3px;
+        border-radius: 5px;
+        color: white;
+        border-color: #b8d2d9;
+    }
+    .btnedit {
+        background-color: #2471a3;
+        margin-top: 5px;
+        margin-left: 20px;
+        color: white;
+        border-radius: 7px;
+        border-color: #2471a3;
+        font-size: 15px;
+    }
+    .btnedit:hover {
+        background-color: skyblue;
+        border: skyblue;
+        border-radius: 3px;
+    }
+    .btndel {
+        background-color: #2471a3;
+        margin-top: 5px;
+        margin-left: 14px;
+        color: white;
+        border-radius: 7px;
+        border-color: #2471a3;
+        font-size: 15px;
+    }
+    .btndel:hover {
+        background-color: skyblue;
+        border: skyblue;
+        border-radius: 3px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .content {
+        background: #fff;
+        max-width: 315px;
+        margin: 30px auto;
+        padding: 20px 30px;
+        border-radius: 10px 110px 10px 110px;
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+    }
+    .btn:hover {
+        background-color: skyblue;
+        border: skyblue;
+        border-radius: 3px;
+    }
+    .d-flex {
+        margin-left: 19.2%;
+        margin-top: 5px;
+    }
+    .btn1 {
+        background-color: rgb(41, 134, 177);
+        margin-left: 3px;
+        border-radius: 5px;
+        color: white;
+        border-color: #b8d2d9;
+        font-size: 12px;
+    }
+    .btnedit {
+        background-color: #2471a3;
+        margin-top: 5px;
+        margin-left: 20px;
+        color: white;
+        border-radius: 7px;
+        border-color: #2471a3;
+        font-size: 12px;
+    }
+    .btnedit:hover {
+        background-color: skyblue;
+        border: skyblue;
+        border-radius: 3px;
+    }
+    .btndel {
+        background-color: #2471a3;
+        margin-top: 5px;
+        margin-left: 5px;
+        color: white;
+        border-radius: 7px;
+        border-color: #2471a3;
+        font-size: 12px;
+    }
+    .btndel:hover {
+        background-color: skyblue;
+        border: skyblue;
+        border-radius: 3px;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+
+        
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyBgcTjdKf3VycWgUf5vaI_BCJKGV_rbILc",
+            authDomain: "week21-todoapp.firebaseapp.com",
+            databaseURL: "https://week21-todoapp.firebaseio.com",
+            projectId: "week21-todoapp",
+            storageBucket: "week21-todoapp.appspot.com",
+            messagingSenderId: "1040366518202",
+            appId: "1:1040366518202:web:844f62deeaf9f497d36783",
+            measurementId: "G-V9G9KESTJ4"
+          };
+          firebase.initializeApp(firebaseConfig);
+        </script>
+
+
+</head>
+
+<body id="main">
+    <div
+        style="color: rgba(0, 0, 0, 0.87); background-color: #2471a3; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; box-sizing: border-box; font-family: Roboto, sans-serif; box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px; border-radius: 0px; position: relative; z-index: 1100; width: 100%; display: flex; padding-left: 24px; padding-right: 24px;">
+        <div style="margin-top: 8px; margin-right: 8px; margin-left: -16px;"><img
+                src="https://vignette.wikia.nocookie.net/gtawiki/images/e/ee/GTAWiki-Todo-Checklist.png/revision/latest?cb=20151027125135"
+                alt="img" width="50" height="50"></div>
+        <h1
+            style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin: 0px; padding-top: 0px; letter-spacing: 0px; font-size: 24px; font-weight: 400; color: rgb(255, 255, 255); height: 64px; line-height: 64px; flex: 1 1 0%;">
+            Todo App</h1><button tabindex="0" type="button"
+            style="border: 10px none; box-sizing: border-box; display: inline-block; font-family: Roboto, sans-serif; cursor: pointer; text-decoration: none; margin: 8px -16px 0px auto; padding: 12px; outline: currentcolor none medium; font-size: 0px; font-weight: inherit; position: relative; overflow: visible; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; width: 48px; height: 48px; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;">
+            <div><span class="muidocs-icon-navigation-expand-more" color="rgba(0, 0, 0, 0.87)"
+                    style="color: rgb(255, 255, 255); position: relative; font-size: 24px; display: inline-block; user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; fill: rgb(255, 255, 255);"></span>
+            </div>
+        </button>
+    </div>
+    <div>
+    <div class="content">
+        <input class="inp" type="text" name="" id="todo-item" placeholder="Enter TO-DO" required>
+        <div class="d-flex flex-row flex-wrap">
+            <button type="button" onclick="addtodo()" class="btn1 text-uppercase">Add Item</button>
+            <button type="button" onclick="delall()" class="btn1 text-uppercase">Delete All</button>
+        </div>
+
+        <div class="lis">
+            <ul id="list">
+
+            </ul>
+        </div>
+    </div>
+
+    
+</body>
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</html>
